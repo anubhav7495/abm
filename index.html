@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABM-app</title>
+    <link rel="stylesheet" href="app.min.css">
+  </head>
+  <body>
+    <div class="row">
+      <div id="map" class="col col-7 map"></div>
+      <div class="col col-5 content">
+        <div class="city-info">
+          <h3>City Description</h3>
+          <p id="city-placeholder">Click on a city area to view its information.</p>
+          <ul id="city-list"></ul>
+        </div>
+        <div class="state-info">
+          <h3>State Description</h3>
+          <p id="state-placeholder">Double Click on a state to view its information.</p>
+          <ul id="state-list"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="app.min.js" charset="utf-8"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZxzZXZ8UjoIr8fYtydxY0D8fEh1WEuss&callback=initMap">
+    </script>
+  </body>
+</html>
