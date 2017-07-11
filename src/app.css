@@ -1,0 +1,78 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.row,
+.col {
+  box-sizing: border-box;
+}
+
+.row::before,
+.row::after {
+  content: " ";
+  display: table;
+}
+
+.row::after {
+  clear: both;
+}
+
+.col {
+  position: relative;
+  float: left;
+  margin-right: 1.6%;
+}
+.col:last-child {
+  margin-right: 0;
+}
+
+.col-5 {
+  width: 40.73333%;
+}
+
+.col-7 {
+  width: 57.66667%;
+}
+
+.map {
+  height: 100vh;
+}
+
+.content {
+  height: 100vh;
+  overflow: auto;
+}
+
+h3 {
+  border-bottom: 1px solid #eee;
+  margin: 0.67em 0;
+}
+
+.city-info,
+.state-info {
+  border-bottom: 1px solid #ccc;
+}
+
+ul {
+  list-style: circle;
+}
+ul > li {
+  padding: 3px 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #2196F3;
+}
